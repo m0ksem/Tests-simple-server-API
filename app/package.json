@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && node dist/index.js",
+    "start:noBuild": "node dist/index.js",
+    "dev": "nodemon",
+    "build": "del dist && yarn run build:ts && babel src --out-dir dist",
+    "build:ts": "tsc",
+    "lint": "yarn run eslint src"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-typescript": "^7.1.0",
+    "babel-eslint": "^10.0.1",
+    "del-cli": "^1.1.0",
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.7",
+    "typescript": "^3.2.1"
+  }
+}

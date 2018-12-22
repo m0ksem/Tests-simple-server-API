@@ -1,20 +1,13 @@
-# Javascript ES6 + Docker template
+# Test simple server API
 
-## Features
-[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
-[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-[![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://typescriptlang.org/)
-- Supports ES6 syntax out-of-the-box.
-- Supports Typescript development and production use.
-- Developer mode using nodemon and production mode using Docker.
-- Contains ESLint for better coding.
-- Designed for Javascript Standard style.
+## Based on
+https://github.com/Andreychik32/es6-docker-template
 
 
 ## How to use
 
-1. Edit [package.json](./app/package.json) file (set name and description fields).
-2. Add your libraries and run your app in developer mode (nodemon):
+1. Clone
+2. Run
 ```sh
 cd app/
 yarn install
@@ -26,13 +19,3 @@ cd app/
 yarn build
 ```
 This will compile your code and insert compiled code into the dist directory.
-
-4. For production use, just type:
-```sh
-sudo docker-compose up -d
-```
-5. To lint code:
-```sh
-cd app/
-yarn lint
-```

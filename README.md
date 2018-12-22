@@ -1,5 +1,9 @@
 # Test simple server API
 
+
+## About
+An example of a simple API for https://github.com/m0ksem/Tests
+
 ## Based on
 https://github.com/Andreychik32/es6-docker-template
 
